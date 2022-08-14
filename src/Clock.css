@@ -59,7 +59,7 @@
   }
   
   .move {
-    animation: move linear 1s infinite;
+    animation: move linear 1.9s infinite;
   }
   
   @keyframes move {

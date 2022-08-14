@@ -58,27 +58,21 @@ useEffect(() => {
     //secs
     if (firstSecond !== defaultTime.firstSecond) {
         setFirstSecondMove('move');
-        setTimeout(()=>{
-            setFirstSecondMove('');  
+        setTimeout(()=>{ 
             setFirstSecond(defaultTime.firstSecond); 
-        },1000)
+        },950)
     } else{
         setFirstSecondMove(''); 
     }
     if (secondSecond !== defaultTime.secondSecond) {
-        setSecondSecondMove('move');
-        setTimeout(()=>{
-            setSecondSecond(defaultTime.secondSecond);
-        },1000)  
-    } else {
-        setSecondSecondMove('');
+        setSecondSecond(defaultTime.secondSecond);
     }
     // mins
     if (firstMinute !== defaultTime.firstMinute) {
         setFirstMinuteMove('move');
         setTimeout(()=>{
             setFirstMinute(defaultTime.firstMinute);
-        },1000)
+        },9500)
     } else {
         setFirstMinuteMove('');
     }
@@ -86,7 +80,7 @@ useEffect(() => {
         setSecondMinuteMove('move');
         setTimeout(()=>{
             setSecondMinute(defaultTime.secondMinute);
-        },1000)
+        },950)
     } else {
         setSecondMinuteMove('');
     }
